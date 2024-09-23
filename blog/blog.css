@@ -1,0 +1,52 @@
+.gird-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .gird-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.image-resize{
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.artical-title{
+    font-size: 25px;
+}
+
+.artical-date{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* Container to hold the image, title, and date */
+.content-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  /* Style for the image */
+  .content-container img {
+    max-width: 100%;
+    margin-right: 10px; /* Adjust as needed */
+  }
+
+  /* Style for the title and date */
+  .content-details {
+    flex-grow: 1; /* Allow the details to take remaining space */
+  }
+
+  .daily-image-size{
+    height: 200px;
+  }
+
+  .date{
+    display: inline;
+  }

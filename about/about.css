@@ -1,0 +1,30 @@
+.split-screen{
+    display: flex;
+}
+
+.left{
+    padding-right: 5px;
+    text-align: center;
+    flex: 50%;
+}
+
+.right{
+    padding-left: 5px;
+    text-align: center;
+    flex: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .split-screen{
+        display: block;
+    }
+    .left{
+      padding-right: 0px;
+      padding-bottom: 10px;
+      flex: 100%;
+    }
+    .right{
+        padding-left: 0px;
+        flex: 100%;
+    }
+  }

@@ -1,0 +1,10 @@
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 47%; /* Adjust the width of the images as needed */
+    height: auto;
+}

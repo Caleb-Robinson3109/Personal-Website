@@ -1,0 +1,93 @@
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.mar {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+  
+.topnav {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    background-color: white;
+    margin: 0px; /* Set margin to 0 for the topnav */
+    padding: 0px;
+    width: 100%;
+
+    
+  }
+  
+  .topnav a{
+    /*width: 70px;*/
+    background: none;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    text-align: center;
+    margin-right: 0px;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav a:hover{
+    background-color: #BBB;
+    display: inline-block; /* Make the anchor and button inline-block on hover */
+  }
+
+  .topnav a:active{
+    color: white;
+  }
+
+  .topnav-r{
+    color: red;
+  }
+
+  .topnav-o{
+    color: orange;
+  }
+
+  .topnav-y{
+    color: gold;
+  }
+
+  .topnav-g{
+    color: green;
+  }
+
+  .topnav-b{
+    color: blue;
+  }
+
+  .topnav-i{
+    color: indigo;
+  }
+
+  .topnav-v{
+    color: violet;
+  }
+
+@media screen and (max-width: 800px) {
+    .topnav a{
+      font-size: 4vw;
+    }
+  }
+
+  .headerMargin{
+    margin-top: 5px;
+  }
+
+  .center {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+  }
+
+  .center h4{
+    padding-bottom: 5px;
+  }

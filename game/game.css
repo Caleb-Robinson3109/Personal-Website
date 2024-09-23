@@ -1,0 +1,32 @@
+.game-title{
+    font-size: 24px;
+    margin: 0;
+    width: 100vw;
+}
+
+.game-description{
+    font-size: 16px;
+    width: 70vw;
+    display: inline;
+}
+
+.game-entry{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
+ .game-image{
+    height: 100px;
+    width: auto;
+ }
+
+ .game-text{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .yt-link{
+    display: inline;
+ }

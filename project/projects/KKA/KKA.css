@@ -1,0 +1,15 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 10px; /* spacing between grid items */
+  }
+  
+  .grid-item {
+    width: 100%; /* Ensures each item takes full width of its container */
+  }
+  
+  .grid-item img {
+    width: 100%; /* Ensures the image takes full width of its parent container */
+    height: auto; /* Maintains aspect ratio of the image */
+  }
+  

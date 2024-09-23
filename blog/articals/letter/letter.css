@@ -1,0 +1,8 @@
+.example1{
+    display: flex;
+    justify-content: center;
+}
+
+.example2{
+    width: 50%;
+}

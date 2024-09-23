@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang = "en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Caleb Robinson</title>
+</head>
+<style>
+    .gray{
+      color: gray;
+    }
+    .black{
+      color: black;
+    }
+    a.black:visited {
+      color: black;
+    }
+    a.black:active{
+      color: black;
+    }
+    a.black:hover{
+      color: black;
+    }
+    .blue{
+      color: blue;
+    }
+    .purple{
+      color:darkorchid;
+    }
+    .red{
+      color: red;
+    }
+    .yellow{
+      color: goldenrod;
+    }
+    .green{
+      color:yellowgreen;
+    }
+    .bottom-element {
+      position: fixed;
+      bottom: 0;
+      margin: 0 auto;
+      width: 100%;
+      padding-bottom: 10px;
+      flex-direction: column;
+    }
+    .centred{
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1vw;
+      line-height: 0.05; 
+      /*margin: auto;*/
+      width: 100%;
+      /*padding: 6px;*/
+      text-align: center;
+      
+    }
+  </style>
+<body>
+    <div class="topnav">
+        <a href = "../index.html" class="topnav-r">Home</a>
+        <a href = "/about/about.html" class="topnav-o">About</a>
+        <a href = "/resume/resume.html" class="topnav-y">Resume</a>
+        <a href = "/project/project.html" class="topnav-g">Projects</a>
+	      <a href = "/game/game.html" class="topnav-b">Games</a> 
+        <a href = "/blog/blog.html" class="topnav-i">Blog</a>
+   </div>
+
+    <div class="mar">
+    <h3 class="headerMargin">Website/Home</h3>
+    <div class="container">
+    <h1 class="welcome">Welcome to caleb-robinson.com</h1>
+    <h2>Number of site visits: <span id="count">loading...</span></h2>
+    </div>
+	<script>
+      
+function fetchCounter() {
+    fetch('counter.php')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data && data.count !== undefined) {
+                document.getElementById('count').innerText = data.count;
+            } else {
+                throw new Error('Invalid JSON response from server');
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching the counter:', error);
+        });
+}
+
+window.onload = fetchCounter;
+ 
+	</script>    
+    </div>
+<div class="bottom-element">
+    <pre class="centred"><span class="gray">         O  O</span><span class="blue">       ___              _             _</span><span class="purple">                ___            _         _                                                                   </span></pre>
+    <pre class="centred"><span class="gray">      O</span><span class="blue">            / __|   __ _     | |     ___   | |__</span><span class="yellow">     ___</span><span class="purple">    | _ \    ___   | |__     (_)    _ _      ___     ___    _ _              </span><span class="red">__      ___    _ __  </span></pre>
+    <pre class="centred"><span class="gray">    O</span><span class="black">  _</span><span class="blue">          | (__   / _` |    | |    / -_)  | '_ \   </span><span class="yellow">|___|</span><span class="purple">   |   /   / _ \  | '_ \    | |   | ' \    (_-<    / _ \  | ' \      </span><span class="green">_</span><span class="red">     / _|    / _ \  | '  \ </span></pre>
+    <pre class="centred"><span class="black">  _<a href="stats/website.html" class="black">П</a>__|"|  __,--.  </span><span class="blue">\___|  \__,_|   </span><span class="black">_</span><span class="blue">|_|</span><span class="black">_</span><span class="blue">   \___|  |_.__/</span><span class="black">   _____</span><span class="purple">   |_|_\   \___/  |_.__/   </span><span class="black">_</span><span class="purple">|_|</span><span class="black">_</span><span class="purple">  |_||_|   /__/</span><span class="black">_</span><span class="purple">   \___/  |_||_|   </span><span class="black">_</span><span class="green">(_)</span><span class="black">_   </span><span class="red">\__|</span><span class="black">_</span><span class="red">   \___/  |_|_|_|</span></pre>
+    <pre class="centred"><span class="black"> |      |_|     |_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|     |_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|</span></pre>
+    <pre class="centred"><span class="black">/_Ɵ---Ɵ-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'</span></pre>
+  </div>
+</body>
+</html> 
